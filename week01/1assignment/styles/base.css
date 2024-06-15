@@ -1,0 +1,134 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para o header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Estilos para a nav */
+nav {
+    background-color:  red;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 20px; /* Ajusta a margem negativa para sobreposição */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main content styles */
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Section card styles */
+.card {
+    display: flex;
+    flex-direction: column; /* Display cards as columns */
+    gap: 20px; /* Spacing between elements inside the card */
+    padding: 20px;
+    border: 1px solid #ccc;
+    flex: 1; /* Flex to take full available width */
+    margin-right: 50px; /* Add margin bottom to create space between cards */
+    margin-left: 50px
+}
+
+
+#aboutme {
+    flex: 1; /* Each section takes equal space */
+}
+
+#aboutme h2 {
+    text-align: center;
+    color: white;
+    background-color: red;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+#aboutme .content,
+#aboutcountry .content {
+    display: flex;
+    flex-direction: row; /* Arrange text and image side by side */
+    gap: 20px;
+    align-items: center; /* Center items vertically */
+}
+
+
+#aboutme p, #aboutcountry {
+    flex: 1; /* Take remaining space */
+}
+
+#aboutcountry h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+#aboutcountry .content {
+    display: flex;
+    flex-direction: column; /* Arrange text and image side by side */
+    gap: 20px;
+    align-items: center; /* Center items vertically */
+}
+
+/* Section card styles for Web Dev Resources */
+.card:last-of-type {
+    flex: 0.3; /* Makes the Web Dev Resources section smaller */
+    max-width: 300px; /* Optional: Sets a maximum width for the smaller card */
+}
+
+.card:last-of-type h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.card:last-of-type a {
+    margin: 10px 0;
+    color: #333;
+    text-decoration: none;
+}
+
+.card:last-of-type a:hover {
+    text-decoration: underline;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer h1, footer h2 {
+    margin: 5px 0;
+}
