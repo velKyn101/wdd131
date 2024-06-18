@@ -1,20 +1,21 @@
-document.addEventListener('DOMContentLoaded', function () {
-    // Get the current year
+window.addEventListener('DOMContentLoaded', (event) => {
     const currentYear = new Date().getFullYear();
-    
-    // Get the last modified date
+    document.getElementById('currentyear').textContent = currentYear;
+
     const lastModified = document.lastModified;
-    
-    // Find the elements in the footer
-    const currentYearElement = document.getElementById('currentyear');
-    const lastModifiedElement = document.getElementById('lastModified');
-    
-    // Set the text content of the elements
-    if (currentYearElement) {
-        currentYearElement.textContent = currentYear;
+    document.getElementById('lastModified').textContent = lastModified;
+});
+
+// Handle bfcache events
+window.addEventListener('pageshow', (event) => {
+    const perfEntries = performance.getEntriesByType("navigation");
+    if (perfEntries[0].type === 'back_forward') {
+        console.log('This page was loaded from bfcache.');
     }
-    
-    if (lastModifiedElement) {
-        lastModifiedElement.textContent = lastModified;
+});
+
+window.addEventListener('pagehide', (event) => {
+    if (event.persisted) {
+        console.log('This page is being put into bfcache.');
     }
 });

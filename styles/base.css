@@ -16,7 +16,7 @@ header {
 
 /* Estilos para a nav */
 nav {
-    background-color:  red;
+    background-color: red;
     padding: 10px 0;
     text-align: center;
     margin-top: 20px; /* Ajusta a margem negativa para sobreposição */
@@ -59,9 +59,8 @@ main {
     border: 1px solid #ccc;
     flex: 1; /* Flex to take full available width */
     margin-right: 50px; /* Add margin bottom to create space between cards */
-    margin-left: 50px
+    margin-left: 50px;
 }
-
 
 #aboutme {
     flex: 1; /* Each section takes equal space */
@@ -83,8 +82,14 @@ main {
     align-items: center; /* Center items vertically */
 }
 
+#aboutme img,
+#aboutcountry img {
+    width: 200px; /* Set explicit width */
+    height: auto; /* Maintain aspect ratio */
+}
 
-#aboutme p, #aboutcountry {
+#aboutme p,
+#aboutcountry {
     flex: 1; /* Take remaining space */
 }
 
@@ -129,6 +134,7 @@ footer {
     padding: 10px 0;
 }
 
-footer h1, footer h2 {
+footer h1,
+footer h2 {
     margin: 5px 0;
 }
