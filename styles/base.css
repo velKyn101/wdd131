@@ -15,7 +15,6 @@ header {
 nav {
     background-color: red;
     padding: 10px 0;
-    text-align: center;
     margin-top: 20px;
 }
 
@@ -86,7 +85,6 @@ main {
 }
 
 #aboutcountry h2 {
-    text-align: center;
     text-decoration: underline;
 }
 
