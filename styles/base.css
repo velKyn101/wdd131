@@ -73,8 +73,7 @@ main {
     align-items: center;
 }
 
-#aboutme img,
-#aboutcountry img {
+img {
     width: 200px;
     height: auto;
 }
