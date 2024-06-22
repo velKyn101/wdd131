@@ -1,4 +1,4 @@
-/* temples.css */
+
 body {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -10,7 +10,7 @@ body {
 header {
     background-color: rgb(170, 0, 170);
     color: #fff;
-    position: relative; /* Posição relativa para alinhar o nav absoluto */
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -18,7 +18,7 @@ header {
 }
 
 .container {
-    display: none; /* Inicialmente oculto em telas maiores */
+    display: none;
     cursor: pointer;
 }
 
@@ -45,7 +45,7 @@ header {
 nav {
     background-color: rgb(170, 0, 170);
     position: absolute;
-    top: 100%; /* Posiciona o nav abaixo do header */
+    top: 100%;
     left: 0;
     width: 100%;
     display: none;
@@ -57,7 +57,7 @@ nav {
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column; /* Alinha itens verticalmente */
+    flex-direction: column;
 }
 
 #navigation a {
@@ -95,7 +95,7 @@ h2 {
 }
 
 figure {
-    flex: 1 1 300px; /* Cresce e encolhe, mantendo largura mínima */
+    flex: 1 1 300px;
     margin: 1rem;
     text-align: center;
 }
@@ -121,27 +121,27 @@ footer
 
 @media screen and (min-width: 768px) {
     .container {
-        display: none; /* Oculta o botão em telas maiores */
+        display: none;
     }
 
     header {
-        justify-content: space-between; /* Alinha o conteúdo à esquerda */
+        justify-content: space-between;
     }
 
     h1 {
-        margin-left: 20px; /* Espaçamento entre o texto e a navegação */
+        margin-left: 20px;
     }
 
     nav {
         position: static;
         display: flex;
         align-items: center;
-        justify-content: flex-end; /* Alinha a navegação à esquerda */
-        background-color: rgb(170, 0, 170); /* Fundo da navegação em telas maiores */
+        justify-content: flex-end;
+        background-color: rgb(170, 0, 170);
         width: auto;
     }
 
     #navigation ul {
-        flex-direction: row; /* Alinha itens horizontalmente */
+        flex-direction: row;
     }
 }
