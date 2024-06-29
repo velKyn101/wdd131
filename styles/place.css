@@ -56,6 +56,29 @@ header {
     left: 20px;
 }
 
+#weather #heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #A51931; /* Dark red */;
+    color: white;
+    padding: 20px;
+    margin: -5px;
+    border-radius: 5px;
+}
+
+#weather h2 {
+    margin-bottom: 10px;
+}
+
+#weather img {
+    display: block;
+    max-width: 100px;
+}
+
+#weather p {
+    margin-bottom: 10px;
+}
 h2 {
     color: #cc0000; /* Red */
 }
@@ -96,4 +119,15 @@ footer h2 {
         flex-direction: column;
         align-items: center;
     }
+    #weather #heading {
+        background-color: #F4F5F8;
+        color: #003399;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #weather img {
+        margin-top: 10px;
+    }
 }
+
