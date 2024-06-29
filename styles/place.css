@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F4F5F8;
+}
+
+header {
+    background-color: 	#2D2A4A; /* Red */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 35px;
+}
+
+#hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#data, #weather {
+    position: absolute;
+    background-color: 	#F4F5F8;
+    color: #003399; /* Dark blue */
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 25%;
+    text-align: center;
+}
+
+#data h2, #weather h2 {
+    background-color: #A51931; /* Dark red */;
+    color: white;
+    padding: 20px;
+    margin: -5px;
+    border-radius: 5px;
+}
+
+#data {
+    top: 20px;
+    right: 20px;
+}
+
+#weather {
+    bottom: 20px;
+    left: 20px;
+}
+
+h2 {
+    color: #cc0000; /* Red */
+}
+
+p {
+    color: #003399; /* Dark blue */
+}
+
+footer {
+    text-align: center;
+    background-color: 	#2D2A4A; /* Red */
+    color: white;
+    padding: 10px;
+}
+
+footer h2 {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    #hero {
+        height: auto;
+    }
+
+    .background-image {
+        height: auto;
+    }
+
+    #data, #weather {
+        position: static;
+        width: 90%;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    #hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
