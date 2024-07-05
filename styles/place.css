@@ -1,5 +1,4 @@
-:root
-{
+:root {
     --header-footer-background-color: #2D2A4A;
     --background-color: #F4F5F8;
 }
@@ -12,10 +11,17 @@ body {
 }
 
 header {
-    background-color: var(--header-footer-background-color); /* Red */
+    background-color: var(--header-footer-background-color);
     color: white;
     text-align: center;
     padding: 20px;
+    font-size: 35px;
+}
+
+header::after {
+    content: "🇹🇭"; /* Adding a Thailand flag after the header */
+    display: inline-block;
+    margin-left: 10px;
     font-size: 35px;
 }
 
@@ -34,7 +40,7 @@ header {
 
 #data, #weather {
     position: absolute;
-    background-color: 	var(--background-color);
+    background-color: var(--background-color);
     color: #003399; /* Dark blue */
     padding: 20px;
     border-radius: 8px;
@@ -45,7 +51,7 @@ header {
 }
 
 #data h2, #weather h2 {
-    background-color: #A51931; /* Dark red */;
+    background-color: #A51931; /* Dark red */
     color: white;
     padding: 20px;
     margin: -5px;
@@ -66,7 +72,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #A51931; /* Dark red */;
+    background-color: #A51931; /* Dark red */
     color: white;
     padding: 20px;
     margin: -5px;
@@ -78,13 +84,14 @@ header {
 }
 
 #weather img {
-    display: block;
+    display: none; /* Hide image by default */
     max-width: 100px;
 }
 
 #weather p {
     margin-bottom: 10px;
 }
+
 h2 {
     color: #cc0000; /* Red */
 }
@@ -95,7 +102,7 @@ p {
 
 footer {
     text-align: center;
-    background-color: 	#2D2A4A; /* Red */
+    background-color: #2D2A4A; /* Red */
     color: white;
     padding: 10px;
 }
@@ -103,6 +110,13 @@ footer {
 footer h2 {
     background-color: var(--header-footer-background-color);
     color: white;
+}
+
+footer h2::after {
+    content: " 🕒"; /* Adding a clock icon after the last updated text */
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 20px;
 }
 
 @media (max-width: 768px) {
@@ -128,3 +142,8 @@ footer h2 {
     }
 }
 
+@media (min-width: 769px) {
+    #weather img {
+        display: block; /* Show image on wider screens */
+    }
+}
