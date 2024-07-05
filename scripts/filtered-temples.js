@@ -158,34 +158,27 @@ const temples = [
 createTempleCard(temples);
 
 const home = document.getElementById("home");
-
 home.addEventListener("click", () => {
-
     createTempleCard(temples);
 });
 
 const old = document.getElementById("old");
-
 old.addEventListener("click", () => {
-
     createTempleCard(temples.filter(temple => temple.dedicated < "1900"));
 });
 
 const neww = document.getElementById("new");
-
 neww.addEventListener("click", () => {
-
     createTempleCard(temples.filter(temple => temple.dedicated > "2000"));
 });
 
 const large = document.getElementById("large");
 large.addEventListener("click", () => {
-
     createTempleCard(temples.filter(temple => temple.area > 90000));
 })
+
 const small = document.getElementById("small");
 small.addEventListener("click", () => {
-
     createTempleCard(temples.filter(temple => temple.area < 10000));
 })
 
