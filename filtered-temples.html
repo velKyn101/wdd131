@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temples Album</title>
+    <meta name="author" content="Kelvyn Diniz">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Kelvyn Diniz - Temple Album">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <h1>Temple Album</h1>
+        </div>
+        <nav id="navigation">
+            <ul>
+                <li><a href="#" id="home">Home</a></li>
+                <li><a href="#" id="old">Old</a></li>
+                <li><a href="#" id="new">New</a></li>
+                <li><a href="#" id="large">Large</a></li>
+                <li><a href="#" id="small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Home | All Temples</h2>
+        <div class="res-grid">
+
+        </div>
+    </main>
+    <footer>
+        <h3>&copy;<span id="currentyear"></span> | Kelvyn Diniz | Brazil</h3>
+        <h3>Last Updated: <span id="lastModified"></span></h3>
+    </footer>
+
+    <script src="scripts/filtered-temples.js" defer></script>
+</body>
+</html>
