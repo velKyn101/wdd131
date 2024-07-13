@@ -76,7 +76,6 @@ main h1 {
 }
 
 /*----------- OVERALL REVIEW --------------*/
-
 input[type="radio"] {
 	display: none;
 	position: relative;
@@ -89,19 +88,15 @@ input[type="radio"] {
 	justify-content: left;
 }
 
-.stars {
-    margin: -1rem -1rem 0 0;
-}
-
 .stars > label {
 	color: gold;
 	width: 30px;
 	height: 30px;
 	font-size: 2rem;
-    margin: -2rem 5px 0 0;
+	margin: -2rem 5px 0 0;
 	display: flex;
 	align-items: center;
-	caret-color: rgba(0, 0, 0, 0); /* remove blinking cursor*/
+	caret-color: rgba(0, 0, 0, 0); /* remove blinking cursor */
 }
 
 .stars > label:hover {
@@ -109,12 +104,22 @@ input[type="radio"] {
 }
 
 .stars > label::before {
-	content: "\2606";
+	content: "\2606"; /* Empty star */
 }
 
 .stars input:checked ~ label::before {
-	content: "\2605";
+	content: "\2605"; /* Filled star */
+	color: gold; /* Change color of filled star */
 }
+
+.stars input:checked + label::before {
+	color: gold; /* Change color of checked star */
+}
+
+.stars input:checked ~ label {
+	color: gold; /* Ensure all stars to the left are gold */
+}
+
 
 /*----------- sTYLING REQUIRED PARTS --------------*/
 
