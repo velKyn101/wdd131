@@ -17,8 +17,8 @@
     <main>
         <form method="get" action="review.html" class="f1">
             <fieldset>
+                <div>Product Name</div>
                 <label>
-                    <div>Product Name</div>
                     <select name="product" id="product" required>
                         <option value="" disabled selected>Select a Product</option>
                     </select>
@@ -34,7 +34,7 @@
                 </div>
 
                 <div>Date of Installation</div>
-                <label><input type="date" name="date" placeholder="mm-dd-yyyy" required></label>
+                <label><input type="date" name="date" required></label>
 
                 <div>Which features did you find useful in the product?<br>(Check all that apply)</div>
                 <label><input type="checkbox" id="design" name="design" value="yes">Design</label>
@@ -43,12 +43,12 @@
                 <label><input type="checkbox" id="performance" name="perfomance" value="yes">Performance</label>
 
                 <label>
-                    <div>Writtern Review</div>
+                    <p>Written Review</p>
                     <textarea name="review" id="review"></textarea>
                 </label>
 
                 <label>
-                    <div>Your Name</div>
+                    <p>Your Name</p>
                     <input type="text" name="name">
                 </label>
                 
@@ -64,6 +64,6 @@
         <h3>Last Updated: <span id="lastModified"></span></h3>
     </footer>
 
-<script src="scripts/form.js"></script>
+    <script src="scripts/form.js" defer></script>
 </body>
 </html>
