@@ -38,6 +38,8 @@ main h1 {
     text-align: left;
 }
 
+
+
 .f1 select {
     font-size: 18px;
     width: 100%;
@@ -85,6 +87,10 @@ input[type="radio"] {
 	display: flex;
 	flex-direction: row-reverse;
 	justify-content: left;
+}
+
+.stars {
+    margin: -1rem -1rem 0 0;
 }
 
 .stars > label {
