@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/form.css">
+    <title>Evaluation Form</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form method="get" action="form-thanks.html" class="f1">
+            <fieldset>
+                <label>
+                    <div>Product Name</div>
+                    <select name="product" id="product" required>
+                        <option value="" disabled selected>Select a Product</option>
+                    </select>
+                </label>
+                
+                <div>Overall Rating</div>
+                <div class="stars">
+                    <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
+                    <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
+                    <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
+                    <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
+                    <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
+                </div>
+
+                <div>Date of Installation</div>
+                <label><input type="date" name="date" placeholder="mm-dd-yyyy" required></label>
+
+                <div>Which features did you find useful in the product?<br>(Check all that apply)</div>
+                <label><input type="checkbox" id="design" name="design" value="yes">Design</label>
+                <label><input type="checkbox" id="durability" name="durability" value="yes">Durability</label>
+                <label><input type="checkbox" id="use" name="use" value="yes">Ease of Use</label>
+                <label><input type="checkbox" id="performance" name="perfomance" value="yes">Performance</label>
+
+                <label>
+                    <div>Writtern Review</div>
+                    <textarea name="review" id="review"></textarea>
+                </label>
+
+                <label>
+                    <div>Your Name</div>
+                    <textarea name="name" id="name"></textarea>
+                </label>
+                
+                <input type="submit" value="Post Review">
+            </fieldset>
+        </form>
+    
+    </main>
+
+
+    <footer>
+        <h3>&copy;<span id="currentyear"></span> | Kelvyn Diniz | Brazil</h3>
+        <h3>Last Updated: <span id="lastModified"></span></h3>
+    </footer>
+
+<script src="scripts/form.js"></script>
+</body>
+</html>

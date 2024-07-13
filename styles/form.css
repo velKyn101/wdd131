@@ -1,0 +1,185 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+header {
+    width: 100%;
+    padding: .5rem 2%;
+    background-color: #430073df;
+    color: white;
+    text-align: center;
+}
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+}
+
+main h1 {
+    text-align: center;
+    margin: 5rem;
+}
+
+.f1 fieldset {
+    padding: 0 2%;
+    min-height: 20rem;
+    background-color: #43007359;
+    margin: 2rem 0;
+    border: none;
+    border-radius: 10px;
+    padding: .5rem 2%;
+    
+}
+
+.f1 div {
+    color: #090010;
+    font-size: .9rem;
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+    text-align: left;
+}
+
+.f1 select {
+    font-size: 18px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+.f1 label {
+    display: block;
+    padding-top: .5rem;
+    color: #090010;
+    font-size: .9rem
+}
+
+.f1 input[type="text"],
+.f1 input[type="date"],
+.f1 select,
+.f1 textarea
+{
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+.f1 #review {
+    height: 6rem;
+}
+
+/*----------- OVERALL REVIEW --------------*/
+
+input[type="radio"] {
+	display: none;
+	position: relative;
+	caret-color: rgba(0, 0, 0, 0);
+}
+
+.stars {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: left;
+}
+
+.stars > label {
+	color: gold;
+	width: 30px;
+	height: 30px;
+	font-size: 2rem;
+    margin: -2rem 5px 0 0;
+	display: flex;
+	align-items: center;
+	caret-color: rgba(0, 0, 0, 0); /* remove blinking cursor*/
+}
+
+.stars > label:hover {
+	color: #000;
+}
+
+.stars > label::before {
+	content: "\2606";
+}
+
+.stars input:checked ~ label::before {
+	content: "\2605";
+}
+
+/*----------- sTYLING REQUIRED PARTS --------------*/
+
+.f1 input:required,
+.f1 select:required {
+    border-left: solid 8px red;
+}
+
+.f1 input:required:valid,
+.f1 select:required:valid {
+    border-left: solid 8px green;
+}
+
+/*----------- SUBMIT --------------*/
+
+.f1 input[type="submit"] {
+    border: none;
+    background-color: #e3e3e3;
+    color: #090010;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 1rem;
+    padding: 1rem 1.5rem;
+    margin-top: 1rem;
+    width: 100%;
+    cursor: pointer;
+    max-width: 400px;
+}
+.f1 input[type="submit"]:hover {
+    background-color: #090010;
+    color: #e3e3e3;
+}
+
+/*----------- FOOTER --------------*/
+
+footer{
+    background-color:#430073df;
+    color:#fff;
+    text-align:center;
+    padding: 10px 0;
+}
+footer h1,
+footer h2{
+    margin:5px 0
+}
+
+@media (max-width: 600px) {
+    .f1 input[type="text"],
+    .f1 input[type="date"],
+    .f1 select,
+    .f1 textarea,
+    .f1 input[type="submit"] {
+        width: 100%; /* Ensures full width on smaller screens */
+        max-width: 100%; /* Remove max-width restriction */
+    }
+
+    .f1 label {
+        font-size: 0.9rem; /* Adjust label font size for smaller screens */
+    }
+
+    .f1 div {
+        font-size: 0.85rem; /* Adjust div font size */
+    }
+
+    main h1 {
+        margin: 2rem; /* Reduce margin for main heading */
+    }
+    .stars > label {
+        font-size: 2rem;
+        width: 100%;
+        height: 100%;
+        margin-left: 1rem;
+    }
+}

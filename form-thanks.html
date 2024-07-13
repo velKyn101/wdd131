@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/form.css">
+    <title>Evaluation Form</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <h1>Thank you for your review!</h1>
+        <p>You have completed <span id="reviewCount"></span> reviews.</p>
+        <p><a href="form.html">Add another review</a></p>
+    </main>
+
+
+    <footer>
+        <h3>&copy;<span id="currentyear"></span> | Kelvyn Diniz | Brazil</h3>
+        <h3>Last Updated: <span id="lastModified"></span></h3>
+    </footer>
+    
+    <script>
+        // Get the current count from localStorage or initialize it to 0
+        let count = parseInt(localStorage.getItem('reviewCount')) || 0;
+
+        // Display the count on the page
+        document.addEventListener("DOMContentLoaded", () => {
+            document.getElementById('reviewCount').textContent = count;
+        });
+    </script>
+</body>
+</html>
