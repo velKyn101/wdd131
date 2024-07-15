@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    background-color: #000080;
+    background-color: #07689F;
     color: #ffffff;
     padding: 20px;
     text-align: center;
@@ -28,7 +28,7 @@ main {
 }
 
 h1 {
-    color: #66CCFF;
+    color: #07689F;
     font-size: 24px;
     margin-bottom: 10px;
 }
@@ -63,7 +63,7 @@ p {
 }
 
 footer {
-    background-color: #000080;
+    background-color: #07689F;
     color: #ffffff;
     text-align: center;
     padding: 10px 0;
