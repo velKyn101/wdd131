@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Kelvyn Diniz">
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Kelvyn Diniz - Budget Buddy">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/login.css">
     <title>Budget Buddy</title>
 </head>
 <body>
@@ -15,43 +15,28 @@
                 <li><a href="index.html" class="logo"><img src="images/logo.webp" alt="Budget Buddy" class="logo"></a></li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="form.html">Contact Us</a></li>
-                <li><a href="login.html">Login</a></li>
+                <li><a href="#">Login</a></li>
                 <li><input type="button" value="Sign Up"></li>
             </ul>
         </nav>
         </header>
-    <main>
-        <div class="hero">
-            <div class="text-content">
-                <h1>Take Control of Your Finances</h1>
-                <p>Unlock smarter budgeting with our intuitive tool designed to help you track expenses, set savings goals, and gain financial peace of mind. With our user-friendly interface and powerful features, managing your money has never been easier.</p>
-                <input id="herocta" type="button" value="Start Free Trial">
-            </div>
-            <img src="images/hero-large.webp" alt="">
-        </div>
 
-        <div id="content">
-            <div class="text-content">
-                <h1>Achieve Your Financial Goals with Ease</h1>
-                <p>Our budgeting tool empowers you to create personalized budgets, track your spending in real-time, and visualize your financial progress. Whether you are saving for a vacation or planning for retirement, we are here to support you every step of the way.</p>
-            </div>
-            <img src="images/hero-large.webp" alt="">
-        </div>
+        <main>
 
-        <div id="cta">
-            <div id="ctext">
-                <h2>Ready to get started?</h2>
-                <h2>Sign up or contact us</h2>
-            </div>
-            <div id="cbuttons">
-                <input type="button" value="Start Free Trial" >
-                <input id="contactus" type="button" value="Contact Us" onclick="location.href='form.html'">
-            </div>
-        </div>
-    </main>
+            <form action="404.html" method="get" class="f1">
+                <Fieldset>
+                    <h1>Login</h1>
+                    <label>Login:<input type="text" id="fname" name="fname" required></label>
+                    <label for="">Password:<input type="password" id="lname" name="lname" required></label>
+                    <label for=""><input type="submit" value="Login"></label>
+                </Fieldset>
+            </form>
+        </main>
+
+
     <footer>
         <div id="links">
-            <a href="form.html">Contact Us</a>
+            <a href="#">Contact Us</a>
             <a href="#">Privacy Policy</a>
             <a href="#">Help</a>
         </div>
