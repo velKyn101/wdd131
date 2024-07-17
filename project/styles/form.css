@@ -207,5 +207,6 @@ footer > div:first-child a {
 }
 
 .tenor-gif-embed {
+    margin-top: 1em;
     max-width: 400px;
 }
