@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Kelvyn Diniz">
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Kelvyn Diniz - Budget Buddy">
-    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/login.css">
     <title>Budget Buddy</title>
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="index.html" class="logo"><img src="images/logo.webp" alt="Budget Buddy" class="logo" lazy></a></li>
+                <li><a href="index.html" class="logo"><img src="images/logo.webp" alt="Budget Buddy" class="logo"></a></li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="form.html">Contact Us</a></li>
                 <li><a href="login.html">Login</a></li>
@@ -21,17 +21,26 @@
         </nav>
         </header>
 
-        <main id="thanks">
-            <h1>Thanks for your message!</h1>
-            <p>We will read your message and get back to you as soon as possible.</p>
 
-            <input type="button" value="Back to Main Page" onclick="location.href='index.html'"/>
+        <main>
+
+            <form action="404.html" method="get" class="f1">
+                <Fieldset class="signup">
+                    <h1>Sign Up</h1>                
+                    <label for="">First Name:<input type="text" id="fname" name="fname" required></label>
+                    <label for="">Last Name:  <input type="text" id="lname" name="lname" required></label>
+                    <label for="">E-mail: <input type="email" id="email" name="email" required></label>
+                    <label>Login:<input type="text" id="fname" name="fname" required></label>
+                    <label for="">Password:<input type="password" id="pass" name="lname" required></label>
+                    <label for=""><input type="submit" value="Login"></label>
+                </Fieldset>
+            </form>
         </main>
 
 
     <footer>
         <div id="links">
-            <a href="#">Contact Us</a>
+            <a href="form.html">Contact Us</a>
             <a href="#">Privacy Policy</a>
             <a href="#">Help</a>
         </div>

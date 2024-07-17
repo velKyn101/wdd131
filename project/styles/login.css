@@ -86,7 +86,8 @@ input[type="button"]:hover, input[type="submit"]:hover {
 }
 
 .f1 input[type="text"],
-.f1 input[type="password"]
+.f1 input[type="password"],
+.f1 input[type="email"]
 {
     background-color: white;
     display: block;

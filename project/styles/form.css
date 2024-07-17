@@ -51,7 +51,8 @@ body {
     background-color: #ffffff;
     color: #2e343b;
 }
-input[type="button"], input[type="submit"] {
+input[type="button"], 
+input[type="submit"] {
     
     background-color: #ff984f;
     color: #ffffff;
@@ -68,7 +69,8 @@ input[type="button"]:hover, input[type="submit"]:hover {
 .f1 fieldset {
     padding: 0 2%;
     min-height: 20rem;
-    background-color: #f2f2f2;
+    background-color: #005A8E;
+    color: #f2f2f2;
     margin: 2rem 5%;
     border: none;
     border-radius: 10px;
@@ -86,7 +88,8 @@ input[type="button"]:hover, input[type="submit"]:hover {
 
 .f1 input[type="text"],
 .f1 input[type="email"],
-.f1 textarea
+.f1 textarea,
+.f1 input[type="password"]
 {
     background-color: white;
     display: block;
@@ -185,7 +188,8 @@ footer > div:first-child a {
 }
 
 #thanks {
-    background-color: #f2f2f2;
+    background-color: #005A8E;
+    color: #f2f2f2;
     padding: 5em;
     display: flex;
     align-items: center;
@@ -200,4 +204,8 @@ footer > div:first-child a {
 
 #thanks input[type="button"] {
     margin-top: 1em;
+}
+
+.tenor-gif-embed {
+    max-width: 400px;
 }
