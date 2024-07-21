@@ -11,11 +11,13 @@ header {
     color: #2e343b;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
 nav {
     margin-top: 10px;
     height: 50px;
+    z-index: 1000;
 }
 
 nav ul {
@@ -40,8 +42,65 @@ nav a:nth-child(-n + 3) {
     margin-right: auto;
 }
 
+.container {
+    display: none;
+    cursor: pointer;
+}
+
+#sidebar {
+    position: fixed;
+    top: 60px;
+    right: 0;
+    width: 250px;
+    height: 100vh;
+    z-index: 1000;
+    background-color: #ffffff;
+    color: #2e343b;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+
+#sidebar.show {
+    display: flex;
+}
+
+#sidebar li {
+    padding: 2em 0.5em;
+}
+
+#sidebar input[type="button"] {
+    margin-left: 60%;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #2e343b;
+    margin: 6px 40px;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    transform: translateY(11px) rotate(-45deg);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: translateY(-11px) rotate(45deg);
+}
+
+#navigation.show {
+    display: block;
+}
+
 .logo {
-    width: 15%;
+    width: 25%;
     margin-right: auto;
 }
 
@@ -101,7 +160,7 @@ input[type="button"]:hover {
 
 .hero img
 {
-    max-width: 50%;
+    max-width: 40%;
     height: auto;
 }
 
@@ -155,6 +214,103 @@ input[type="button"]:hover {
     background-color: #FF6B00;
     color: #f2f2f2;
 }
+
+/*form.html*/
+input[type="button"], 
+input[type="submit"] {
+    
+    background-color: #ff984f;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[type="button"]:hover, input[type="submit"]:hover {
+    background-color: #FF6B00;
+    color: #FFFFFF;
+}
+
+.f1 fieldset {
+    padding: 0 2%;
+    min-height: 20rem;
+    background-color: #005A8E;
+    color: #f2f2f2;
+    margin: 2rem 5%;
+    border: none;
+    border-radius: 10px;
+    padding: .5rem 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.f1 label {
+    display: block;
+    margin: 1rem 0;
+}
+
+.f1 input[type="text"],
+.f1 input[type="email"],
+.f1 textarea,
+.f1 input[type="password"]
+{
+    background-color: white;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+.f1 input[type="submit"] {
+    border: none;
+    background-color: #ff984f;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 1rem;
+    padding: 1rem 1.5rem;
+    margin-top: 1rem;
+    width: 100%;
+    cursor: pointer;
+    max-width: 400px;
+}
+
+.f1 input[type="submit"]:hover {
+    background-color: #FF6B00;
+    color: #e3e3e3;
+}
+
+/* thanks.html */
+#thanks {
+    background-color: #005A8E;
+    color: #f2f2f2;
+    padding: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5em;
+}
+#thanks h1,
+#thanks p{
+    margin: .2em;
+}
+
+#thanks input[type="button"] {
+    margin-top: 1em;
+}
+
+.tenor-gif-embed {
+    margin-top: 1em;
+    max-width: 400px;
+}
+
 
 footer {
     background-color: #e0e0e0;
@@ -219,4 +375,148 @@ footer > div:first-child a {
 #links {
     text-decoration: none;
     color: #2e343b;
+}
+
+@media (max-width: 1400px) {
+    .container {
+        display: block;
+    }
+
+    header {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #sidebar {
+        display: none;
+    }
+    #sidebar.show {
+        display: flex;
+    }
+
+    .logo {
+        width: 35%;
+        margin-left: 0;
+        order: -1;
+    }
+
+    header .header-content {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero .text-content {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .hero img {
+        max-width: 40%;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .hero input[type="button"] {
+        margin-top: 20px;
+    }
+    
+    #content {
+        background-color: #f2f2f2;
+        color: #2e343b;
+        padding: 20px;
+        margin-bottom: 5em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #content .text-content {
+        text-align: center;
+        padding: 0 1em;
+    }
+    
+    #content img {
+        width: 100%;
+        max-width: 60%;
+        height: auto;
+        margin: 20px 0;
+    }
+    
+    #cta {
+        height: auto; 
+        background-color: #005A8E;
+        color: #f2f2f2;
+        padding: 2em 1em;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5em;
+    }
+    
+    #cta h2 {
+        margin: 10px 0;
+        font-size: 1.5em;
+    }
+    
+    #cta #cbuttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+    
+    #cta input[type="button"] {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .logo {
+        width: 50%;
+    }
+
+    #sidebar.show {
+        display: flex;
+    }
+
+}
+
+body.blur #main,
+body.blur #cta,
+body.blur footer,
+body.blur .hero,
+body.blur #content,
+body.blur .f1,
+body.blur .f1 input[type="submit"],
+body.blur .f1 input[type="text"],
+body.blur .f1 input[type="email"],
+body.blur .f1 textarea,
+body.blur .f1 input[type="password"],
+body.blur #thanks {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    filter: blur(5px);
+    pointer-events: none;
+}
+
+body.blur #sidebar {
+    display: flex;
 }

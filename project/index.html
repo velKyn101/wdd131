@@ -10,9 +10,22 @@
 </head>
 <body>
     <header>
-        <nav>
+        <div class="header-content">
+            <a href="index.html" class="logo"><img src="images/logo.webp" alt="Budget Buddy" class="logo" loading="lazy"></a>
+            <div class="container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+        <nav id="navigation">
             <ul>
-                <li><a href="index.html" class="logo"><img src="images/logo.webp" alt="Budget Buddy" class="logo"></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="form.html">Contact Us</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><input type="button" value="Sign Up" onclick="location.href='signup.html'"></li>
+            </ul>
+            <ul id="sidebar">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="form.html">Contact Us</a></li>
                 <li><a href="login.html">Login</a></li>
@@ -20,14 +33,14 @@
             </ul>
         </nav>
         </header>
-    <main>
+    <main id="main">
         <div class="hero">
             <div class="text-content">
                 <h1>Take Control of Your Finances</h1>
                 <p>Unlock smarter budgeting with our intuitive tool designed to help you track expenses, set savings goals, and gain financial peace of mind. With our user-friendly interface and powerful features, managing your money has never been easier.</p>
                 <input id="herocta" type="button" value="Start Free Trial">
             </div>
-            <img src="images/hero-large.webp" alt="">
+            <img src="images/hero.webp" alt="https://storyset.com/business" loading="lazy">
         </div>
 
         <div id="content">
@@ -35,7 +48,7 @@
                 <h1>Achieve Your Financial Goals with Ease</h1>
                 <p>Our budgeting tool empowers you to create personalized budgets, track your spending in real-time, and visualize your financial progress. Whether you are saving for a vacation or planning for retirement, we are here to support you every step of the way.</p>
             </div>
-            <img src="images/hero-large.webp" alt="">
+            <img src="images/content-img.webp" alt="" loading="lazy">
         </div>
 
         <div id="cta">
@@ -56,7 +69,7 @@
             <a href="#">Help</a>
         </div>
         <div id="center">
-            <img src="images/logo.webp" alt="">
+            <img src="images/logo.webp" alt="" loading="lazy">
             <p>&copy; <span id="currentyear"></span> | Kelvyn Diniz | Brazil</p>
             <p id="lastModified"></p>
         </div>
@@ -64,15 +77,16 @@
         <div class="social">
             <h3>Social Medias</h3>
             <a href="https://github.com/velKyn101" target="_blank">
-                <img src="images/github.png" alt="fb icon">
+                <img src="images/github.png" alt="fb icon" loading="lazy">
             </a>
             <a href="https://www.linkedin.com/in/kelvyn-diniz-1b23b0121/" target="_blank">
-                <img src="images/linkedin.png" alt="twitter icon">
+                <img src="images/linkedin.png" alt="twitter icon" loading="lazy">
             </a>
             <a href="https://instagram.com" target="_blank">
-                <img src="images/facebook.png" alt="instagram icon">
+                <img src="images/facebook.png" alt="instagram icon" loading="lazy">
             </a>
         </div>
     </footer>
+    <script src="scripts/scripts.js" defer></script>
 </body>
 </html>

@@ -5,14 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Kelvyn Diniz">
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Kelvyn Diniz - Budget Buddy">
-    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Budget Buddy</title>
 </head>
 <body>
     <header>
-        <nav>
+        <div class="header-content">
+            <a href="index.html" class="logo"><img src="images/logo.webp" alt="Budget Buddy" class="logo" loading="lazy"></a>
+            <div class="container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+        <nav id="navigation">
             <ul>
-                <li><a href="index.html" class="logo"><img src="images/logo.webp" alt="Budget Buddy" class="logo"></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="form.html">Contact Us</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><input type="button" value="Sign Up" onclick="location.href='signup.html'"></li>
+            </ul>
+            <ul id="sidebar">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="form.html">Contact Us</a></li>
                 <li><a href="login.html">Login</a></li>
@@ -43,7 +56,7 @@
             <a href="#">Help</a>
         </div>
         <div id="center">
-            <img src="images/logo.webp" alt="">
+            <img src="images/logo.webp" alt="" loading="lazy">
             <p>&copy; <span id="currentyear"></span> | Kelvyn Diniz | Brazil</p>
             <p id="lastModified"></p>
         </div>
@@ -51,15 +64,16 @@
         <div class="social">
             <h3>Social Medias</h3>
             <a href="https://github.com/velKyn101" target="_blank">
-                <img src="images/github.png" alt="fb icon">
+                <img src="images/github.png" alt="github icon" loading="lazy">
             </a>
             <a href="https://www.linkedin.com/in/kelvyn-diniz-1b23b0121/" target="_blank">
-                <img src="images/linkedin.png" alt="twitter icon">
+                <img src="images/linkedin.png" alt="twitter icon" loading="lazy">
             </a>
             <a href="https://instagram.com" target="_blank">
-                <img src="images/facebook.png" alt="instagram icon">
+                <img src="images/facebook.png" alt="instagram icon" loading="lazy">
             </a>
         </div>
     </footer>
+    <script src="scripts/scripts.js" defer></script>
 </body>
 </html>
