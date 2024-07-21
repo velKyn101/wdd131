@@ -16,7 +16,7 @@ header {
 
 nav {
     margin-top: 10px;
-    height: 50px;
+    height: 100%;
     z-index: 1000;
 }
 
@@ -61,10 +61,6 @@ nav a:nth-child(-n + 3) {
     align-items: flex-start;
     justify-content: flex-start;
 
-}
-
-#sidebar.show {
-    display: flex;
 }
 
 #sidebar li {
@@ -393,10 +389,7 @@ footer > div:first-child a {
     nav {
         display: none;
     }
-
-    #sidebar {
-        display: none;
-    }
+    
     #sidebar.show {
         display: flex;
     }
@@ -490,6 +483,10 @@ footer > div:first-child a {
 @media screen and (max-width: 768px) {
     .logo {
         width: 50%;
+    }
+    .tenor-gif-embed {
+        margin-top: 1em;
+        max-width: 350px;
     }
 
     #sidebar.show {

@@ -1,4 +1,4 @@
-function myFunction(x) {
+function navEffect(x) {
   x.classList.toggle("change");
   
   const sidebar = document.getElementById('sidebar');
