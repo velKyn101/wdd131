@@ -63,6 +63,10 @@ nav a:nth-child(-n + 3) {
 
 }
 
+#sidebar.show {
+    display: hide;
+}
+
 #sidebar li {
     padding: 2em 0.5em;
 }
@@ -386,7 +390,7 @@ footer > div:first-child a {
         padding: 10px;
     }
 
-    nav {
+    #mainbar {
         display: none;
     }
 
