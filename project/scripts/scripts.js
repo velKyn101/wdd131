@@ -7,3 +7,7 @@ function navEffect(x) {
   
   document.body.classList.toggle('blur');
 }
+
+addEventListener('DOMContentLoaded', function() {
+  document.getElementById('currentyear').textContent = new Date().getFullYear();
+})
