@@ -267,6 +267,11 @@ input[type="button"]:hover, input[type="submit"]:hover {
     box-sizing: border-box;
 }
 
+.f1 textarea {
+    height: 10rem;
+    width: 40rem;    
+}
+
 .f1 input[type="submit"] {
     border: none;
     background-color: #ff984f;
